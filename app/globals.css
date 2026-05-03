@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #eef6ff;
+  color: #172033;
+}
+
+.dark body {
+  background: #111527;
+  color: #eef4ff;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 24px 70px rgba(75, 90, 140, 0.18);
+  backdrop-filter: blur(22px);
+}
+
+.dark .glass {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(19, 26, 48, 0.66);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.soft-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.soft-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.soft-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(119, 133, 180, 0.45);
+}
